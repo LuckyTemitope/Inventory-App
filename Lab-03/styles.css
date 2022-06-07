@@ -1,0 +1,215 @@
+﻿
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    /*font-family: 'Rubik Mono One', sans-serif;*/
+    font-size: 4em;
+    margin-bottom: 2em;
+}
+
+
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #FF8A5B; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+
+
+
+.landing-page {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: 70vh;
+    width: 100%;
+    padding: 5em 15em;
+    overflow: hidden;
+    /*background: black;*/
+}
+
+.hero-image { 
+    width: 30em;
+    height: 30em;
+    z-index: -10;
+    overflow: hidden;
+    margin-left: auto;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+    .hero-image img {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        
+    }
+
+.logo {
+    margin-top: 2em;
+    width: 100vw;
+    height: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10 !important;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.logo-text {
+    font-weight: 200;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .5s ease-in-out;
+    font-family: 'Nixie One', cursive;
+}
+
+    .logo-text:hover {
+        letter-spacing: 6px;
+    }
+
+footer {
+    background: #FF8A5B;
+    font-weight: 900;
+    width: 100%;
+    height: 5em;
+    position: relative;
+    bottom: 0;
+    padding: 2em;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1em;
+    transition: .3s ease-in-out;
+}
+
+    a:hover {
+        border-bottom: 1px solid white;
+    }
+
+.landing-page-main-text a {
+    background: #FF8A5B;
+    padding: 1em;
+    color: white;
+    margin-top: 2em !important;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.viewBtn {
+    position: absolute;
+    top: 3;
+}
+
+.viewBtn:hover {
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.storage-container {
+    padding: 3em 15em;
+    height: 70vh;
+    overflow: auto;
+}
+
+input {
+    padding: 1em 1.5em;
+    background: rgba(252, 234, 222, 0.5);
+    border: 0.5px solid #EBEBEB;
+    border-radius: 5px;
+}
+
+tr {
+    height: 2.5em;
+    padding: 1em 0;
+}
+
+#ContentPlaceHolder1_loadBtn {
+    background: #25CED1;
+    color: white;
+    margin-left: 1em;
+}
+
+#ContentPlaceHolder1_insertBtn {
+    background: #18898B;
+    color: white;
+    margin-top: 1em;
+}
+
+#ContentPlaceHolder1_updateBtn {
+    background: #FF8A5B;
+    color: white;
+}
+
+#ContentPlaceHolder1_deleteBtn {
+    background: #EA526F;
+    color: white;
+}
+
+
+#ContentPlaceHolder1_clearBtn {
+    background: #FF5A5F;
+    color: white;
+    margin-top: 1em;
+}
+
+#ContentPlaceHolder1_viewBtn {
+    background: #18898B;
+    color: white;
+}
+
+
+#ContentPlaceHolder1_messageLbl {
+    width: 50%;
+    padding: 1em;
+    background: #f5f5f5;
+    margin-top: 2em;
+}
+
+#ContentPlaceHolder1_inventoryList {
+    width: 70%;
+}
+
+td, th {
+    padding-left: 0.5em;
+}
